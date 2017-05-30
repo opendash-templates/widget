@@ -1,3 +1,5 @@
+import pkg from '../package.json';
+
 import widgetController from './widget/widget.controller.js';
 import widgetTemplate from './widget/widget.template.html';
 
@@ -6,6 +8,8 @@ import settingsTemplate from './settings/settings.template.html';
 
 import defaultPresets from './presets';
 
+const name = pkg.name;
+
 export default (options) => {
     
     options = options || {};
@@ -13,6 +17,7 @@ export default (options) => {
     let presets = options.presets || defaultPresets;
 
     return {
+        name,
         widgetController,
         widgetTemplate,
         settingsController,
