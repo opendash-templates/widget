@@ -1,0 +1,15 @@
+{
+  "name": "opendash-widget-{{ opendash-widget-name }}",
+  "version": "1.0.0",
+  "author": "{{ opendash-widget-developer-name }} <{{ opendash-widget-developer-email }}>",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "dist/widget.common.js",
+  "jsnext:main": "dist/widget.module.js",
+  "module": "dist/widget.module.js",
+  "assets": [
+    "assets"
+  ],
+  "dependencies": {
+  }
+}
