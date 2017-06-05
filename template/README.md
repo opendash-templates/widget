@@ -1,1 +1,1 @@
-# {{ opendash-widget-name }}
+# {{ opendash-template-name }}

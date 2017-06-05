@@ -1,7 +1,7 @@
 {
-  "name": "opendash-widget-{{ opendash-widget-name }}",
+  "name": "opendash-widget-{{ opendash-template-name }}",
   "version": "1.0.0",
-  "author": "{{ opendash-widget-developer-name }} <{{ opendash-widget-developer-email }}>",
+  "author": "{{ opendash-template-maintainer-name }} <{{ opendash-template-maintainer-email }}>",
   "license": "UNLICENSED",
   "private": true,
   "main": "dist/widget.common.js",
