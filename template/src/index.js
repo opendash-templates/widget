@@ -1,3 +1,6 @@
+import './widget/widget.scss';
+import './settings/settings.scss';
+
 import pkg from '../package.json';
 
 import widgetController from './widget/widget.controller.js';
