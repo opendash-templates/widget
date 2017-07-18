@@ -1,7 +1,7 @@
 export default [
     {
         name: 'Preset Name',
-        image: '/assets/vendor/opendash-template-{{ opendash-template-name }}/assets/preset.png',
+        image: '/assets/vendor/opendash-widget-{{ opendash-template-name }}/assets/preset.png',
         description: 'Preset Description...',
         config: {
             name: 'Display Name',
