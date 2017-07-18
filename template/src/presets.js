@@ -8,7 +8,7 @@ export default [
       // Uncomment the next line to set a default preset size
       // grid: [12,6], // x,y size
       config: {
-
+        name: 'World',
       },
     },
   },
