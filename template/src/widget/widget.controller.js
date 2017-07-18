@@ -5,5 +5,8 @@ export default class WidgetController {
   constructor($adapter, $element, $scope, moment) {
 
     this.$adapter = $adapter;
+
+    // Uncomment the next line to disable the loading mode
+    // this.loading = false;
   }
 }
