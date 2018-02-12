@@ -1,12 +1,32 @@
+let $data;
+
+// Widget Controller
+// Learn more at: http://docs.opendash.de/guides/widgets.html#widgetcontroller
+
 export default class WidgetController {
 
-  static $inject = ['od.adapter.service', '$element', '$scope', 'moment'];
+  static $inject = ['od.data.service', '$element', '$scope', 'moment'];
 
-  constructor($adapter, $element, $scope, moment) {
+  constructor(dataService, $element, $scope, moment) {
 
-    this.$adapter = $adapter;
+    $data = dataService;
+  }
 
-    // Uncomment the next line to disable the loading mode
-    // this.loading = false;
+  // Angular Component Lifecycle Hook
+  // Anything related to this.config or this.state should happen after this hook is called
+  $onInit() {
+    
+    // Access the widget config
+    console.log(this.config);
+
+    // Disable loading state
+    // this.state.loading = false;
+
+    // Tell open.DASH that the configuration is invalid
+    // open.DASH will ask the user to configurate the widget
+    // this.state.config = false;
+
+    // Make the user aware of the widget by highlighting it
+    // this.state.alert = true;
   }
 }
