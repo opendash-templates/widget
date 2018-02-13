@@ -20,7 +20,7 @@ export default class WidgetController {
     console.log(this.config);
 
     // Disable loading state
-    // this.state.loading = false;
+    this.state.loading = false;
 
     // Tell open.DASH that the configuration is invalid
     // open.DASH will ask the user to configurate the widget
