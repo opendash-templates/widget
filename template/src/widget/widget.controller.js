@@ -5,7 +5,7 @@ let $data;
 
 export default class WidgetController {
 
-  static $inject = ['opendash/services/data', '$element', '$scope', 'moment'];
+  static get $inject() {return ['opendash/services/data', '$element', '$scope', 'moment']; }
 
   constructor(dataService, $element, $scope, moment) {
 
